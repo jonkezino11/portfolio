@@ -328,6 +328,65 @@ h1{
 
 .footer p{margin-bottom:4px}
 
+/* ===== Courses ===== */
+
+.courses-section {
+  padding: 82px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.courses-title {
+  margin: 0 0 28px;
+  padding-bottom: 12px;
+
+  font-size: 24px;
+  font-weight: 500;
+
+  color: var(--text);
+
+  border-bottom: 1px solid var(--line);
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+}
+
+.course-group {
+  margin-bottom: 30px;
+}
+
+.course-group h3 {
+  margin: 0 0 18px;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+
+  color: var(--accent);
+}
+
+.course-group p {
+  margin: 0 0 12px;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: var(--text);
+}
+
+.course-code {
+  display: inline;
+  margin-right: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+
+  color: var(--accent);
+}
+
 /* Responsive */
 @media(max-width:840px){
   .hero-grid{
@@ -347,7 +406,14 @@ h1{
     padding:18px 0
   }
 
-  .nav{gap:14px}
+  .nav{gap:14px
+  }
+
+  .courses-grid {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+}
 
   .hero,.project-hero{
     padding:68px 0
